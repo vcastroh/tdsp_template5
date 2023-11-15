@@ -2,20 +2,22 @@
 
 ## Resumen Ejecutivo
 
-A lo largo del proyecto se identificaron desafíos y oportunidades clave y se logró tener un modelo con una robustez aceptable en la detección de la probabilidad de que un individuo sufra un accidente cerebrovascular. El modelo final, basado en el RandomForestClassifier, se destaca por tener una mejor capacidad para identificar casos positivos, a pesar del desequilibrio de clases que presentaban los datos.
+A lo largo del proyecto se logró tener un modelo con una robustez aceptable en la detección de la probabilidad de que un individuo sufra un accidente cerebrovascular. El modelo final, basado en el RandomForestClassifier, se destaca por tener una mejor capacidad para identificar casos positivos, a pesar del desequilibrio de clases que presentaban los datos.
 
 ## Resultados del proyecto
 
 Inicialmente se realizó la limpieza de los datos, y luego se implementaron y evaluaron múltiples modelos, incluyendo Redes Neuronales Artificiales (ANN), Bosque Aleatorio y Regresión Logística.
+
 La técnica de sobremuestreo SMOTE se aplicó para abordar el desequilibrio de clases, mejorando la capacidad del modelo de ANN.
+
 Finalmente se evidenció que el modelo RandomForestClassifier presentaba un rendimiento superior en la identificación de casos positivos, superando al modelo base y otros modelos evaluados y por ende se seleccionó como el modelo final.
+
 Es importaante resaltar que a pesar de las mejoras con datos sobremuestreados, persisten desafíos en la identificación precisa de casos positivos en el conjunto de datos original.
 
 ## Lecciones aprendidas
 
-La calidad de los datos es fundamental, asi como la limpieza y la comprensión de los mismos.
-
-- Recomendaciones para Futuros Proyectos de Machine Learning:
+- La calidad de los datos es fundamental, asi como la limpieza y la comprensión de los mismos.
+Recomendaciones para Futuros Proyectos de Machine Learning:
     - Considerar estrategias adicionales para abordar el desequilibrio de clases.
 
 ## Impacto del proyecto
