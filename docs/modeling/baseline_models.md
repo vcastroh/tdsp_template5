@@ -30,8 +30,8 @@ El modelo fue evaluado utilizando métricas estándar para problemas de clasific
 
 Los resultados del modelo baseline después de 20 epochs de entrenamiento son los siguientes:
 
-Pérdida: 0.1460
-Precisión binaria: 95.46%
+- Pérdida: 0.1460
+- Precisión binaria: 95.46%
 
 ## Análisis de los resultados
 
