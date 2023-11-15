@@ -2,7 +2,8 @@
 
 ## Resumen Ejecutivo
 
-A lo largo del proyecto se logró tener un modelo con una robustez aceptable en la detección de la probabilidad de que un individuo sufra un accidente cerebrovascular. El modelo final, basado en el RandomForestClassifier, se destaca por tener una mejor capacidad para identificar casos positivos, a pesar del desequilibrio de clases que presentaban los datos.
+A lo largo del proyecto se logró tener un modelo con una robustez aceptable en la detección de la probabilidad de que un individuo sufra un accidente cerebrovascular. 
+El modelo final, basado en el RandomForestClassifier, se destaca por tener una mejor capacidad para identificar casos positivos, a pesar del desequilibrio de clases que presentaban los datos.
 
 ## Resultados del proyecto
 
@@ -17,7 +18,9 @@ Es importaante resaltar que a pesar de las mejoras con datos sobremuestreados, p
 ## Lecciones aprendidas
 
 - La calidad de los datos es fundamental, asi como la limpieza y la comprensión de los mismos.
+
 Recomendaciones para Futuros Proyectos de Machine Learning:
+
     - Considerar estrategias adicionales para abordar el desequilibrio de clases.
 
 ## Impacto del proyecto
@@ -25,6 +28,7 @@ Recomendaciones para Futuros Proyectos de Machine Learning:
 El modelo tiene el potencial de mejorar la atención médica preventiva al identificar individuos con mayor riesgo de accidentes cerebrovasculares.
 
 - Áreas de Mejora y Oportunidades de Desarrollo Futuras:
+
       - Explorar la incorporación de más datos clínicos y biomédicos para mejorar la precisión del modelo.
       - Colaborar con profesionales de la salud para una implementación más efectiva en el área médica.
 
