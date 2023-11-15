@@ -1,27 +1,45 @@
 # Reporte de Datos
 
-Este documento contiene los resultados del análisis exploratorio de datos.
-
 ## Resumen general de los datos
 
-En esta sección se presenta un resumen general de los datos. Se describe el número total de observaciones, variables, el tipo de variables, la presencia de valores faltantes y la distribución de las variables.
+El conjunto de datos inicial consta de 5110 observaciones y 12 variables. Las variables incluyen información demográfica, historial médico y otros indicadores relevantes para la predicción de accidentes cerebrovasculares. 
+No se observaron valores faltantes en la mayoría de las variables, con excepción de la variable "bmi," que presenta 201 valores nulos, para solucionar esto se hizó la sustitución de los valores nulos en "bmi" por la media de la columna.
+
 
 ## Resumen de calidad de los datos
 
-En esta sección se presenta un resumen de la calidad de los datos. Se describe la cantidad y porcentaje de valores faltantes, valores extremos, errores y duplicados. También se muestran las acciones tomadas para abordar estos problemas.
+- Valores Faltantes: La variable "bmi" presenta 201 valores nulos, que se han sustituido por la media de la columna.
+- Valores Extremos: No se identificaron valores extremos en las variables numéricas.
+- Errores y Duplicados: No se detectaron errores ni duplicados en el conjunto de datos.
 
 ## Variable objetivo
 
-En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
+La variable objetivo es "stroke," que indica la presencia de un accidente cerebrovascular. El conjunto de datos está desbalanceado, ya que la mayoría de las observaciones corresponden a individuos que no han sufrido un accidente cerebrovascular (stroke=0). Por lo tanto se usó la técnica SMOTE para balancear los datos.
 
 ## Variables individuales
 
-En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
+- Gender
+   - Descripción: La mayoría de las observaciones son de género femenino.
+   - Gráfico: Se presenta un gráfico de la distribución de género.
+- Age
+   - Descripción: La edad de los pacientes varía en el conjunto de datos.
+   - Estadísticas Descriptivas: Se incluyen estadísticas descriptivas como media, mediana, y desviación estándar.
+- Hypertension y heart_disease
+   - Descripción: La mayoría de los pacientes no tienen hipertensión ni enfermedad cardíaca.
+   - Gráficos: Se presentan gráficos de distribución para ambas variables binarias.
+- Ever_married y work_type
+   - Descripción: La mayoría de los pacientes están casados y trabajan en el sector privado.
+   - Gráficos: Se incluyen gráficos de distribución para ambas variables categóricas.
+- Residence_type
+   - Descripción: La distribución de tipos de residencia es equilibrada.
+   - Gráfico: Se presenta un gráfico de distribución para la variable categórica "Residence_type."
+- avg_glucose_level y bmi
+   - Descripción: Se incluyen estadísticas descriptivas para ambas variables numéricas.
+- smoking_status
+   - Descripción: La mayoría de los pacientes tienen un estado de fumador desconocido.
+   - Gráfico: Se presenta un gráfico de distribución para la variable categórica "smoking_status."
 
-## Ranking de variables
-
-En esta sección se presenta un ranking de las variables más importantes para predecir la variable objetivo. Se utilizan técnicas como la correlación, el análisis de componentes principales (PCA) o la importancia de las variables en un modelo de aprendizaje automático.
 
 ## Relación entre variables explicativas y variable objetivo
 
-En esta sección se presenta un análisis de la relación entre las variables explicativas y la variable objetivo. Se utilizan gráficos como la matriz de correlación y el diagrama de dispersión para entender mejor la relación entre las variables. Además, se pueden utilizar técnicas como la regresión lineal para modelar la relación entre las variables.
+Se exploraró la relación entre las variables explicativas y la variable objetivo utilizando la matriz de correlación
