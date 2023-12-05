@@ -1,4 +1,5 @@
 from load_data import load_data
+from perform_eda import perform_eda
 
 def prepare_data(data):
     data.isnull().sum()
