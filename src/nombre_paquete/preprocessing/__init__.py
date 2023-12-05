@@ -1,4 +1,4 @@
-from sklearn.preprocessing import LabelEncoder
+from load_data import load_data
 
 def prepare_data(data):
     data.isnull().sum()
@@ -19,7 +19,7 @@ def prepare_data(data):
     data.ever_married[data.ever_married == 'Yes'] = 1
     data.ever_married[data.ever_married == 'No'] = 0
     data.ever_married = data.ever_married.astype('uint8')
-    
+
     data.Residence_type[data.Residence_type == 'Rural'] = 1
     data.Residence_type[data.Residence_type == 'Urban'] = 0
     data.Residence_type = data.Residence_type.astype('uint8')
